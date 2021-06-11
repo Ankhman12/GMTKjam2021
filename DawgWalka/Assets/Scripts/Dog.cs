@@ -17,9 +17,7 @@ public class Dog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement.y = Input.GetAxis("Vertical");
-        movement.x = Input.GetAxis("Horizontal");
-
+        //?
     }
 
     private void FixedUpdate()
