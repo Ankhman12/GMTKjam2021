@@ -121,3 +121,9 @@ crashlytics-build.properties
 Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
 
 *.DS_Store
+DawgWalka/Assembly-CSharp.csproj
+DawgWalka/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
+DawgWalka/FMODUnity.csproj
+DawgWalka/FMODUnityEditor.csproj
+DawgWalka/FMODUnityResonance.csproj
+DawgWalka/FMODUnityResonanceEditor.csproj
