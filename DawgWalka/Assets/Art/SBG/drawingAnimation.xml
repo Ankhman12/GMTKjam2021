@@ -1,0 +1,488 @@
+<drawingAnimations>
+ <drawingAnimation spritesheet="sheet_Top" name="SkateboardGurl_Idle_Top">
+  <drawing node="SkateboardGurl-G_LUpperArm" name="7-LUpperArm" drwId="1">
+   <drw skinId="0" frame="1" repeat="24" name="7-LUpperArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_L_LowerArm" name="8-L_LowerArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="24" name="8-L_LowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LShoulder" name="6-LShoulder" drwId="3">
+   <drw skinId="0" frame="1" repeat="24" name="6-LShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Skateboard" name="22-Skateboard" drwId="4">
+   <drw skinId="0" frame="1" repeat="24" name="22-Skateboard-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperLeg" name="19-RUpperLeg" drwId="5">
+   <drw skinId="0" frame="1" repeat="24" name="19-RUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerLeg" name="20-RLowerLeg" drwId="6">
+   <drw skinId="0" frame="1" repeat="24" name="20-RLowerLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RFoot" name="21-RFoot" drwId="7">
+   <drw skinId="0" frame="1" repeat="24" name="21-RFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LUpperLeg" name="13-LUpperLeg" drwId="8">
+   <drw skinId="0" frame="1" repeat="24" name="13-LUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LLowerLeg_1" name="14-LFoot" drwId="9">
+   <drw skinId="0" frame="1" repeat="24" name="14-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LFoot" name="15-LFoot" drwId="10">
+   <drw skinId="0" frame="1" repeat="24" name="15-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperArm_1" name="10-RUpperArm_1" drwId="11">
+   <drw skinId="0" frame="1" repeat="24" name="10-RUpperArm_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerArm" name="9-RLowerArm" drwId="12">
+   <drw skinId="0" frame="1" repeat="24" name="9-RLowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RShoulder" name="11-RShoulder" drwId="13">
+   <drw skinId="0" frame="1" repeat="24" name="11-RShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Backpack" name="12-Backpack" drwId="14">
+   <drw skinId="0" frame="1" repeat="24" name="12-Backpack-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LBunches_1" name="5-LBunches_1" drwId="15">
+   <drw skinId="0" frame="1" repeat="24" name="5-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RBunches" name="4-LBunches_1" drwId="16">
+   <drw skinId="0" frame="1" repeat="24" name="4-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Helmet" name="3-Helmet" drwId="17">
+   <drw skinId="0" frame="1" repeat="24" name="3-Helmet-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top" name="SkateboardGurl_flip_Top">
+  <drawing node="SkateboardGurl-G_LUpperArm" name="7-LUpperArm" drwId="1">
+   <drw skinId="0" frame="1" repeat="22" name="7-LUpperArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_L_LowerArm" name="8-L_LowerArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="22" name="8-L_LowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LShoulder" name="6-LShoulder" drwId="3">
+   <drw skinId="0" frame="1" repeat="22" name="6-LShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Skateboard" name="22-Skateboard" drwId="4">
+   <drw skinId="0" frame="1" repeat="6" name="22-Skateboard-1.png"/>
+   <drw skinId="0" frame="7" repeat="2" name="22-Skateboard-3.png"/>
+   <drw skinId="0" frame="9" repeat="2" name="22-Skateboard-2.png"/>
+   <drw skinId="0" frame="11" repeat="2" name="22-Skateboard-4.png"/>
+   <drw skinId="0" frame="13" repeat="2" name="22-Skateboard-5.png"/>
+   <drw skinId="0" frame="15" repeat="8" name="22-Skateboard-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperLeg" name="19-RUpperLeg" drwId="5">
+   <drw skinId="0" frame="1" repeat="22" name="19-RUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerLeg" name="20-RLowerLeg" drwId="6">
+   <drw skinId="0" frame="1" repeat="22" name="20-RLowerLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RFoot" name="21-RFoot" drwId="7">
+   <drw skinId="0" frame="1" repeat="22" name="21-RFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LUpperLeg" name="13-LUpperLeg" drwId="8">
+   <drw skinId="0" frame="1" repeat="22" name="13-LUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LLowerLeg_1" name="14-LFoot" drwId="9">
+   <drw skinId="0" frame="1" repeat="22" name="14-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LFoot" name="15-LFoot" drwId="10">
+   <drw skinId="0" frame="1" repeat="22" name="15-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperArm_1" name="10-RUpperArm_1" drwId="11">
+   <drw skinId="0" frame="1" repeat="22" name="10-RUpperArm_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerArm" name="9-RLowerArm" drwId="12">
+   <drw skinId="0" frame="1" repeat="22" name="9-RLowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RShoulder" name="11-RShoulder" drwId="13">
+   <drw skinId="0" frame="1" repeat="22" name="11-RShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Backpack" name="12-Backpack" drwId="14">
+   <drw skinId="0" frame="1" repeat="22" name="12-Backpack-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LBunches_1" name="5-LBunches_1" drwId="15">
+   <drw skinId="0" frame="1" repeat="22" name="5-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RBunches" name="4-LBunches_1" drwId="16">
+   <drw skinId="0" frame="1" repeat="22" name="4-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Helmet" name="3-Helmet" drwId="17">
+   <drw skinId="0" frame="1" repeat="22" name="3-Helmet-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top" name="SkateboardGurl_wallride_Top">
+  <drawing node="SkateboardGurl-G_LUpperArm" name="7-LUpperArm" drwId="1">
+   <drw skinId="0" frame="1" repeat="23" name="7-LUpperArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_L_LowerArm" name="8-L_LowerArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="23" name="8-L_LowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LShoulder" name="6-LShoulder" drwId="3">
+   <drw skinId="0" frame="1" repeat="23" name="6-LShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Skateboard" name="22-Skateboard" drwId="4">
+   <drw skinId="0" frame="1" repeat="8" name="22-Skateboard-1.png"/>
+   <drw skinId="0" frame="9" repeat="7" name="22-Skateboard-5.png"/>
+   <drw skinId="0" frame="16" repeat="8" name="22-Skateboard-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperLeg" name="19-RUpperLeg" drwId="5">
+   <drw skinId="0" frame="1" repeat="23" name="19-RUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerLeg" name="20-RLowerLeg" drwId="6">
+   <drw skinId="0" frame="1" repeat="23" name="20-RLowerLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RFoot" name="21-RFoot" drwId="7">
+   <drw skinId="0" frame="1" repeat="23" name="21-RFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LUpperLeg" name="13-LUpperLeg" drwId="8">
+   <drw skinId="0" frame="1" repeat="23" name="13-LUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LLowerLeg_1" name="14-LFoot" drwId="9">
+   <drw skinId="0" frame="1" repeat="23" name="14-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LFoot" name="15-LFoot" drwId="10">
+   <drw skinId="0" frame="1" repeat="8" name="15-LFoot-1.png"/>
+   <drw skinId="0" frame="9" repeat="7" name="15-LFoot-2.png"/>
+   <drw skinId="0" frame="16" repeat="8" name="15-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperArm_1" name="10-RUpperArm_1" drwId="11">
+   <drw skinId="0" frame="1" repeat="23" name="10-RUpperArm_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerArm" name="9-RLowerArm" drwId="12">
+   <drw skinId="0" frame="1" repeat="23" name="9-RLowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RShoulder" name="11-RShoulder" drwId="13">
+   <drw skinId="0" frame="1" repeat="23" name="11-RShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Backpack" name="12-Backpack" drwId="14">
+   <drw skinId="0" frame="1" repeat="23" name="12-Backpack-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LBunches_1" name="5-LBunches_1" drwId="15">
+   <drw skinId="0" frame="1" repeat="23" name="5-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RBunches" name="4-LBunches_1" drwId="16">
+   <drw skinId="0" frame="1" repeat="23" name="4-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Helmet" name="3-Helmet" drwId="17">
+   <drw skinId="0" frame="1" repeat="23" name="3-Helmet-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top" name="SkateboardGurl_duckin_Top">
+  <drawing node="SkateboardGurl-G_LUpperArm" name="7-LUpperArm" drwId="1">
+   <drw skinId="0" frame="1" repeat="14" name="7-LUpperArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_L_LowerArm" name="8-L_LowerArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="14" name="8-L_LowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LShoulder" name="6-LShoulder" drwId="3">
+   <drw skinId="0" frame="1" repeat="14" name="6-LShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Skateboard" name="22-Skateboard" drwId="4">
+   <drw skinId="0" frame="1" repeat="14" name="22-Skateboard-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperLeg" name="19-RUpperLeg" drwId="5">
+   <drw skinId="0" frame="1" repeat="14" name="19-RUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerLeg" name="20-RLowerLeg" drwId="6">
+   <drw skinId="0" frame="1" repeat="14" name="20-RLowerLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RFoot" name="21-RFoot" drwId="7">
+   <drw skinId="0" frame="1" repeat="14" name="21-RFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LUpperLeg" name="13-LUpperLeg" drwId="8">
+   <drw skinId="0" frame="1" repeat="14" name="13-LUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LLowerLeg_1" name="14-LFoot" drwId="9">
+   <drw skinId="0" frame="1" repeat="14" name="14-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LFoot" name="15-LFoot" drwId="10">
+   <drw skinId="0" frame="1" repeat="14" name="15-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperArm_1" name="10-RUpperArm_1" drwId="11">
+   <drw skinId="0" frame="1" repeat="14" name="10-RUpperArm_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerArm" name="9-RLowerArm" drwId="12">
+   <drw skinId="0" frame="1" repeat="14" name="9-RLowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RShoulder" name="11-RShoulder" drwId="13">
+   <drw skinId="0" frame="1" repeat="14" name="11-RShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Backpack" name="12-Backpack" drwId="14">
+   <drw skinId="0" frame="1" repeat="14" name="12-Backpack-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LBunches_1" name="5-LBunches_1" drwId="15">
+   <drw skinId="0" frame="1" repeat="14" name="5-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RBunches" name="4-LBunches_1" drwId="16">
+   <drw skinId="0" frame="1" repeat="14" name="4-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Helmet" name="3-Helmet" drwId="17">
+   <drw skinId="0" frame="1" repeat="14" name="3-Helmet-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top" name="SkateboardGurl_duck_Top">
+  <drawing node="SkateboardGurl-G_LUpperArm" name="7-LUpperArm" drwId="1">
+   <drw skinId="0" frame="1" repeat="24" name="7-LUpperArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_L_LowerArm" name="8-L_LowerArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="24" name="8-L_LowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LShoulder" name="6-LShoulder" drwId="3">
+   <drw skinId="0" frame="1" repeat="24" name="6-LShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Skateboard" name="22-Skateboard" drwId="4">
+   <drw skinId="0" frame="1" repeat="24" name="22-Skateboard-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperLeg" name="19-RUpperLeg" drwId="5">
+   <drw skinId="0" frame="1" repeat="24" name="19-RUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerLeg" name="20-RLowerLeg" drwId="6">
+   <drw skinId="0" frame="1" repeat="24" name="20-RLowerLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RFoot" name="21-RFoot" drwId="7">
+   <drw skinId="0" frame="1" repeat="24" name="21-RFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LUpperLeg" name="13-LUpperLeg" drwId="8">
+   <drw skinId="0" frame="1" repeat="24" name="13-LUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LLowerLeg_1" name="14-LFoot" drwId="9">
+   <drw skinId="0" frame="1" repeat="24" name="14-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LFoot" name="15-LFoot" drwId="10">
+   <drw skinId="0" frame="1" repeat="24" name="15-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperArm_1" name="10-RUpperArm_1" drwId="11">
+   <drw skinId="0" frame="1" repeat="24" name="10-RUpperArm_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerArm" name="9-RLowerArm" drwId="12">
+   <drw skinId="0" frame="1" repeat="24" name="9-RLowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RShoulder" name="11-RShoulder" drwId="13">
+   <drw skinId="0" frame="1" repeat="24" name="11-RShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Backpack" name="12-Backpack" drwId="14">
+   <drw skinId="0" frame="1" repeat="24" name="12-Backpack-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LBunches_1" name="5-LBunches_1" drwId="15">
+   <drw skinId="0" frame="1" repeat="24" name="5-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RBunches" name="4-LBunches_1" drwId="16">
+   <drw skinId="0" frame="1" repeat="24" name="4-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Helmet" name="3-Helmet" drwId="17">
+   <drw skinId="0" frame="1" repeat="24" name="3-Helmet-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top" name="SkateboardGurl_duckout_Top">
+  <drawing node="SkateboardGurl-G_LUpperArm" name="7-LUpperArm" drwId="1">
+   <drw skinId="0" frame="1" repeat="14" name="7-LUpperArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_L_LowerArm" name="8-L_LowerArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="14" name="8-L_LowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LShoulder" name="6-LShoulder" drwId="3">
+   <drw skinId="0" frame="1" repeat="14" name="6-LShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Skateboard" name="22-Skateboard" drwId="4">
+   <drw skinId="0" frame="1" repeat="14" name="22-Skateboard-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperLeg" name="19-RUpperLeg" drwId="5">
+   <drw skinId="0" frame="1" repeat="14" name="19-RUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerLeg" name="20-RLowerLeg" drwId="6">
+   <drw skinId="0" frame="1" repeat="14" name="20-RLowerLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RFoot" name="21-RFoot" drwId="7">
+   <drw skinId="0" frame="1" repeat="14" name="21-RFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LUpperLeg" name="13-LUpperLeg" drwId="8">
+   <drw skinId="0" frame="1" repeat="14" name="13-LUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LLowerLeg_1" name="14-LFoot" drwId="9">
+   <drw skinId="0" frame="1" repeat="14" name="14-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LFoot" name="15-LFoot" drwId="10">
+   <drw skinId="0" frame="1" repeat="14" name="15-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperArm_1" name="10-RUpperArm_1" drwId="11">
+   <drw skinId="0" frame="1" repeat="14" name="10-RUpperArm_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerArm" name="9-RLowerArm" drwId="12">
+   <drw skinId="0" frame="1" repeat="14" name="9-RLowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RShoulder" name="11-RShoulder" drwId="13">
+   <drw skinId="0" frame="1" repeat="14" name="11-RShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Backpack" name="12-Backpack" drwId="14">
+   <drw skinId="0" frame="1" repeat="14" name="12-Backpack-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LBunches_1" name="5-LBunches_1" drwId="15">
+   <drw skinId="0" frame="1" repeat="14" name="5-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RBunches" name="4-LBunches_1" drwId="16">
+   <drw skinId="0" frame="1" repeat="14" name="4-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Helmet" name="3-Helmet" drwId="17">
+   <drw skinId="0" frame="1" repeat="14" name="3-Helmet-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top" name="SkateboardGurl_grindin_Top">
+  <drawing node="SkateboardGurl-G_LUpperArm" name="7-LUpperArm" drwId="1">
+   <drw skinId="0" frame="1" repeat="20" name="7-LUpperArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_L_LowerArm" name="8-L_LowerArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="20" name="8-L_LowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LShoulder" name="6-LShoulder" drwId="3">
+   <drw skinId="0" frame="1" repeat="20" name="6-LShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Skateboard" name="22-Skateboard" drwId="4">
+   <drw skinId="0" frame="1" repeat="20" name="22-Skateboard-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperLeg" name="19-RUpperLeg" drwId="5">
+   <drw skinId="0" frame="1" repeat="20" name="19-RUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerLeg" name="20-RLowerLeg" drwId="6">
+   <drw skinId="0" frame="1" repeat="20" name="20-RLowerLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RFoot" name="21-RFoot" drwId="7">
+   <drw skinId="0" frame="1" repeat="20" name="21-RFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LUpperLeg" name="13-LUpperLeg" drwId="8">
+   <drw skinId="0" frame="1" repeat="20" name="13-LUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LLowerLeg_1" name="14-LFoot" drwId="9">
+   <drw skinId="0" frame="1" repeat="20" name="14-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LFoot" name="15-LFoot" drwId="10">
+   <drw skinId="0" frame="1" repeat="20" name="15-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperArm_1" name="10-RUpperArm_1" drwId="11">
+   <drw skinId="0" frame="1" repeat="20" name="10-RUpperArm_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerArm" name="9-RLowerArm" drwId="12">
+   <drw skinId="0" frame="1" repeat="20" name="9-RLowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RShoulder" name="11-RShoulder" drwId="13">
+   <drw skinId="0" frame="1" repeat="20" name="11-RShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Backpack" name="12-Backpack" drwId="14">
+   <drw skinId="0" frame="1" repeat="20" name="12-Backpack-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LBunches_1" name="5-LBunches_1" drwId="15">
+   <drw skinId="0" frame="1" repeat="20" name="5-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RBunches" name="4-LBunches_1" drwId="16">
+   <drw skinId="0" frame="1" repeat="20" name="4-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Helmet" name="3-Helmet" drwId="17">
+   <drw skinId="0" frame="1" repeat="20" name="3-Helmet-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top" name="SkateboardGurl_grind_Top">
+  <drawing node="SkateboardGurl-G_LUpperArm" name="7-LUpperArm" drwId="1">
+   <drw skinId="0" frame="1" repeat="23" name="7-LUpperArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_L_LowerArm" name="8-L_LowerArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="23" name="8-L_LowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LShoulder" name="6-LShoulder" drwId="3">
+   <drw skinId="0" frame="1" repeat="23" name="6-LShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Skateboard" name="22-Skateboard" drwId="4">
+   <drw skinId="0" frame="1" repeat="23" name="22-Skateboard-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperLeg" name="19-RUpperLeg" drwId="5">
+   <drw skinId="0" frame="1" repeat="23" name="19-RUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerLeg" name="20-RLowerLeg" drwId="6">
+   <drw skinId="0" frame="1" repeat="23" name="20-RLowerLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RFoot" name="21-RFoot" drwId="7">
+   <drw skinId="0" frame="1" repeat="23" name="21-RFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LUpperLeg" name="13-LUpperLeg" drwId="8">
+   <drw skinId="0" frame="1" repeat="23" name="13-LUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LLowerLeg_1" name="14-LFoot" drwId="9">
+   <drw skinId="0" frame="1" repeat="23" name="14-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LFoot" name="15-LFoot" drwId="10">
+   <drw skinId="0" frame="1" repeat="23" name="15-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperArm_1" name="10-RUpperArm_1" drwId="11">
+   <drw skinId="0" frame="1" repeat="23" name="10-RUpperArm_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerArm" name="9-RLowerArm" drwId="12">
+   <drw skinId="0" frame="1" repeat="23" name="9-RLowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RShoulder" name="11-RShoulder" drwId="13">
+   <drw skinId="0" frame="1" repeat="23" name="11-RShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Backpack" name="12-Backpack" drwId="14">
+   <drw skinId="0" frame="1" repeat="23" name="12-Backpack-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LBunches_1" name="5-LBunches_1" drwId="15">
+   <drw skinId="0" frame="1" repeat="23" name="5-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RBunches" name="4-LBunches_1" drwId="16">
+   <drw skinId="0" frame="1" repeat="23" name="4-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Helmet" name="3-Helmet" drwId="17">
+   <drw skinId="0" frame="1" repeat="23" name="3-Helmet-1.png"/>
+  </drawing>
+ </drawingAnimation>
+ <drawingAnimation spritesheet="sheet_Top" name="SkateboardGurl_grindout_Top">
+  <drawing node="SkateboardGurl-G_LUpperArm" name="7-LUpperArm" drwId="1">
+   <drw skinId="0" frame="1" repeat="20" name="7-LUpperArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_L_LowerArm" name="8-L_LowerArm" drwId="2">
+   <drw skinId="0" frame="1" repeat="20" name="8-L_LowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LShoulder" name="6-LShoulder" drwId="3">
+   <drw skinId="0" frame="1" repeat="20" name="6-LShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Skateboard" name="22-Skateboard" drwId="4">
+   <drw skinId="0" frame="1" repeat="20" name="22-Skateboard-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperLeg" name="19-RUpperLeg" drwId="5">
+   <drw skinId="0" frame="1" repeat="20" name="19-RUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerLeg" name="20-RLowerLeg" drwId="6">
+   <drw skinId="0" frame="1" repeat="20" name="20-RLowerLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RFoot" name="21-RFoot" drwId="7">
+   <drw skinId="0" frame="1" repeat="20" name="21-RFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LUpperLeg" name="13-LUpperLeg" drwId="8">
+   <drw skinId="0" frame="1" repeat="20" name="13-LUpperLeg-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LLowerLeg_1" name="14-LFoot" drwId="9">
+   <drw skinId="0" frame="1" repeat="20" name="14-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LFoot" name="15-LFoot" drwId="10">
+   <drw skinId="0" frame="1" repeat="20" name="15-LFoot-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RUpperArm_1" name="10-RUpperArm_1" drwId="11">
+   <drw skinId="0" frame="1" repeat="20" name="10-RUpperArm_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RLowerArm" name="9-RLowerArm" drwId="12">
+   <drw skinId="0" frame="1" repeat="20" name="9-RLowerArm-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RShoulder" name="11-RShoulder" drwId="13">
+   <drw skinId="0" frame="1" repeat="20" name="11-RShoulder-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Backpack" name="12-Backpack" drwId="14">
+   <drw skinId="0" frame="1" repeat="20" name="12-Backpack-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_LBunches_1" name="5-LBunches_1" drwId="15">
+   <drw skinId="0" frame="1" repeat="20" name="5-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_RBunches" name="4-LBunches_1" drwId="16">
+   <drw skinId="0" frame="1" repeat="20" name="4-LBunches_1-1.png"/>
+  </drawing>
+  <drawing node="SkateboardGurl-G_Helmet" name="3-Helmet" drwId="17">
+   <drw skinId="0" frame="1" repeat="20" name="3-Helmet-1.png"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>
