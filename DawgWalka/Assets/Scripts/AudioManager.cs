@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum GroundMaterial { Ground, Rail, Air }
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager i;
+
 
     private const float MAX_SPEED = 5.1f;
 
@@ -32,6 +34,10 @@ public class AudioManager : MonoBehaviour
         skateboardNoise = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Skateboard/Skateboard");
         music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Level Music");
         jingle = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Intro Jingle");
+        if(SceneManager.GetActiveScene().name == "ProgrammingScene") {
+            StartSkateboardNoise();
+            StartMusic();
+        }
     }
 
     // Update is called once per frame

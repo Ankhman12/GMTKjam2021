@@ -20,12 +20,12 @@ public class ButtonSFX : MonoBehaviour, IPointerEnterHandler, IPointerClickHandl
     //Detect if the Cursor starts to pass over the GameObject
     public void OnPointerEnter(PointerEventData pointerEventData)
     {
-        FMODUnity.RuntimeManager.PlayOneShot(mouseoverSfxPath, transform.position);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UI/Mouseover");
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
-        FMODUnity.RuntimeManager.PlayOneShot(selectSfxPath, transform.position);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UI/Menu Select");
     }
     
 }
