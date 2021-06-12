@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         float speedPercent = PlayerMovement.currentSpeed/MAX_SPEED; //1 is the speed after which the sfx doesn't change
-        Debug.Log(speedPercent);
+        //Debug.Log(speedPercent);
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Speed", speedPercent);
     }
 
