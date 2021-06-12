@@ -7,7 +7,7 @@ public class RoadController : MonoBehaviour
 
     private Vector2 currentPos;
     public Vector2 roadDir;
-    public float moveSpeed;
+    public static float moveSpeed = 5;
 
     // Start is called before the first frame update
     void Start()

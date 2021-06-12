@@ -18,6 +18,8 @@ public class AudioManager : MonoBehaviour
 
     private static FMOD.Studio.EventInstance jingle;
     
+    private static FMOD.Studio.EventInstance horde;
+
     void Awake()
     {
         if(i != null)
@@ -34,24 +36,26 @@ public class AudioManager : MonoBehaviour
         skateboardNoise = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Skateboard/Skateboard");
         music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Level Music");
         jingle = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Intro Jingle");
+        horde = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Zombie Horde");
         if(SceneManager.GetActiveScene().name == "ProgrammingScene") {
-            StartSkateboardNoise();
-            StartMusic();
+            StartGame();
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        float speedPercent = PlayerMovement.currentSpeed/MAX_SPEED; //1 is the speed after which the sfx doesn't change
+        float speedPercent = (PlayerMovement.currentSpeed + RoadController.moveSpeed)/MAX_SPEED; //1 is the speed after which the sfx doesn't change
         //Debug.Log(speedPercent);
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Speed", speedPercent);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Zombie Distance", ZombieHorde.distance);
     }
 
     public void StartGame() {
         StopJingle();
         StartSkateboardNoise();
         StartMusic();
+        StartHordeNoise();
     }
 
     public void StartJingle() {
@@ -59,8 +63,10 @@ public class AudioManager : MonoBehaviour
     }
 
     public void StopJingle() {
-        jingle.release();
-        jingle.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        if(jingle.isValid()) {
+            jingle.release();
+            jingle.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }  
     }
 
     public void StartMusic() {
@@ -80,13 +86,27 @@ public class AudioManager : MonoBehaviour
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Paused", 0);
     }
 
+    public void OnDeath() {
+        StopSkateboardNoise();
+        StopMusic();
+    }
+
     public void StartSkateboardNoise() {
         skateboardNoise.start();
-        skateboardNoise.release();
     }
 
     public void StopSkateboardNoise() {
+        skateboardNoise.release();
         skateboardNoise.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+
+    public void StartHordeNoise() {
+        horde.start();
+    }
+
+    public void StopHordeNoise() {
+        horde.release();
+        horde.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
     public void SkateboardJump() {
