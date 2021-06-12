@@ -9,7 +9,6 @@ public class ZombieHorde : MonoBehaviour
     //Game over when distance = 0;
     [SerializeField]
     public static float distance = 1;
-    public float changeableDistance;
     public float decay = 0.35f;
     [SerializeField]
     private float distanceToPlayer = 1.5f; //physical distance between player and zombies at furthest point
@@ -32,10 +31,6 @@ public class ZombieHorde : MonoBehaviour
             distance = 1;
         } else if(distance <= 0) {
             //Game Over function
-        }
-        Debug.Log(distance);
-        if(Input.GetKeyDown(KeyCode.N)) {
-            HitObstacle();
         }
 
         //update position
