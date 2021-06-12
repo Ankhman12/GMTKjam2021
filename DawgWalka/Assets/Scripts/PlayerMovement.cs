@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Vector2 movement;
     public float moveSpeed;
+    public float drag;
     Rigidbody2D rb;
 
     //these variables calculate the real speed of the player, for SFX
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         movement.x = Input.GetAxis("Horizontal");
+        movement.y = drag;
     }
 
     private void FixedUpdate()
