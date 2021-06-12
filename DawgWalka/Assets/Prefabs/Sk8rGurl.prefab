@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8520945, g: 0.27429688, b: 0.8679245, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -148,9 +148,9 @@ MonoBehaviour:
   movement: {x: 0, y: 0}
   moveSpeed: 6
   drag: -2
-  ziggi: {fileID: 7556709672575504359, guid: 040f21ce967b0a44b8b089eed60d748d, type: 3}
   canTrick: 0
   currentObstacle: {fileID: 0}
+  obstacleForce: 0
 --- !u!61 &3146225684948222510
 BoxCollider2D:
   m_ObjectHideFlags: 0

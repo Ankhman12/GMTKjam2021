@@ -11,12 +11,11 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log("YEEEEEEEEEEEET");
+
         if (other.gameObject.CompareTag("Player")) {
             player = other.GetComponent<PlayerMovement>();
             player.canTrick = true;
             player.ResetTrickTimer();
-            //Debug.Log("YEEEEEEEEEEEET");
             player.currentObstacle = this.gameObject;
         }
     }
@@ -27,7 +26,6 @@ public class Obstacle : MonoBehaviour
         {
             player = other.GetComponent<PlayerMovement>();
             player.canTrick = false;
-            //Debug.Log("Yolololololo");
             player.currentObstacle = null;
         }
     }
