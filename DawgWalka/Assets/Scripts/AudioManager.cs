@@ -44,6 +44,7 @@ public class AudioManager : MonoBehaviour
         GameManager.OnUnpause += OnUnpause;
         GameManager.OnGameOver += OnDeath;
         PlayerMovement.OnTrick += OnTrick; 
+        PlayerMovement.OnMissTrick += OnCollide;
         Setup();
     }
 
@@ -51,6 +52,8 @@ public class AudioManager : MonoBehaviour
         GameManager.OnPause -= OnPause;
         GameManager.OnUnpause -= OnUnpause;
         GameManager.OnGameOver -= OnDeath; 
+        PlayerMovement.OnTrick -= OnTrick; 
+        PlayerMovement.OnMissTrick -= OnCollide;
     }
 
     //Separated because I think it needs to be retriggered when reloading level
@@ -154,6 +157,10 @@ public class AudioManager : MonoBehaviour
     }
 
     public void OnCollide(ref GameObject collision) {
-        Debug.Log("Collided!");
+        if(collision.CompareTag("Cone")) {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Cone Impact");
+        } else {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Impact");
+        }
     }
 }
