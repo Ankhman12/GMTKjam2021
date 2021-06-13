@@ -6,9 +6,11 @@ public class Obstacle : MonoBehaviour
 {
 
     private PlayerMovement player;
-    //public LayerMask playerLayer;
-    
+    public Animator anim;
 
+    public void Impact() {
+        anim.SetTrigger("Impact");
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
 

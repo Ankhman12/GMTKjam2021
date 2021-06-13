@@ -23,10 +23,13 @@ public class PlayerMovement : MonoBehaviour
     public bool canTrick;
     private float trickTimer;
     public GameObject currentObstacle;
-    [SerializeField] private float obstacleForce;
-
     public static event ActionRef<GameObject> OnMissTrick;
     public static event Action OnTrick;
+
+    //Animations and VFX
+    public ParticleSystem GrindFX;
+    public Animator playerAnim;
+    public Animator dogAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -90,7 +93,12 @@ public class PlayerMovement : MonoBehaviour
             //Trick failure
             Debug.Log("miss");
             OnMissTrick?.Invoke(ref currentObstacle);
+            dogAnim.SetTrigger("Slowed");
             canTrick = false;
+            if (!currentObstacle.CompareTag("Rail"))
+            {
+                currentObstacle.GetComponent<Obstacle>().Impact();
+            }
             currentObstacle = null;
         }
 
@@ -113,10 +121,8 @@ public class PlayerMovement : MonoBehaviour
             if (currentObstacle.CompareTag("Rail"))
             {
                 //Play Trick animation(s)
-                //....
-
-                //freeze rotation
-                //rb.MoveRotation(180f);
+                playerAnim.SetBool("isGrinding", true);
+                GrindFX.Play();
                 rb.freezeRotation = true;
                 onRail = true;
                 Debug.Log("Yaet");
@@ -124,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
             else if (currentObstacle.CompareTag("Cone"))
             {
                 //Play Trick animation(s)
-                //....
+                playerAnim.SetTrigger("Kickflip");
                 Debug.Log("Trick'd");
             }
             OnTrick?.Invoke();
@@ -134,9 +140,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void LeaveRail() {
-        //rb.AddForce(-transform.right * 10f, ForceMode2D.Impulse);
-        //rb.MoveRotation(90f);
-        rb.freezeRotation = false;
+        GrindFX.Stop();
+        playerAnim.SetBool("isGrinding", false);
         onRail = false;
     }
 
