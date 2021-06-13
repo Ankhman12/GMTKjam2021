@@ -117,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
             //Jump?
         }
         else 
-        { 
+        {
             if (currentObstacle.CompareTag("Rail"))
             {
                 //Play Trick animation(s)
@@ -132,6 +132,9 @@ public class PlayerMovement : MonoBehaviour
                 //Play Trick animation(s)
                 playerAnim.SetTrigger("Kickflip");
                 Debug.Log("Trick'd");
+            }
+            else if (currentObstacle.CompareTag("Barrier")) {
+                playerAnim.SetTrigger("Duck");
             }
             OnTrick?.Invoke();
             canTrick = false;

@@ -5011,8 +5011,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {x: 0, y: 0}
-  moveSpeed: 5
-  drag: -3
+  moveSpeed: 7
+  drag: -2
   onRail: 0
   canTrick: 0
   currentObstacle: {fileID: 0}

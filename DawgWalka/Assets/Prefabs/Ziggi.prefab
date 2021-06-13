@@ -243,7 +243,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -344,9 +344,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  obstacleLayer:
+  targetLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
   scanBoxDimensions: {x: 4, y: 1}
   targetDir: {x: 0, y: 0}
 --- !u!61 &7556709672575504358

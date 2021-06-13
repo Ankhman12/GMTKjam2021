@@ -6,7 +6,7 @@ public class Dog : MonoBehaviour
 {
     //public Vector2 movement;
     public float moveSpeed;
-    public LayerMask obstacleLayer;
+    public LayerMask targetLayer;
     public Vector2 scanBoxDimensions;
 
     private Rigidbody2D rb;
@@ -41,10 +41,9 @@ public class Dog : MonoBehaviour
         if (readyForNext)
         {
             Vector2 castPos = new Vector2(this.transform.position.x, this.transform.position.y + 3f); //Set position ahead of dog to cast box
-            RaycastHit2D hit = Physics2D.BoxCast(castPos, scanBoxDimensions, 0f, this.transform.up, 5f, obstacleLayer); //cast box to check for obstacles
+            RaycastHit2D hit = Physics2D.BoxCast(castPos, scanBoxDimensions, 0f, this.transform.up, 5f, targetLayer); //cast box to check for obstacles
             //Debug.Log(hit.collider);
             //if (hit.collider != null) { 
-
                 target = hit.collider.transform; //target is set to transform of first collider hit by boxcast
             //}
             Vector2 targetPoint = hit.point; //target point is set to point of contact
