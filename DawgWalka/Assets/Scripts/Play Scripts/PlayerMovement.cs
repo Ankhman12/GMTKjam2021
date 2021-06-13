@@ -122,6 +122,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 //Play Trick animation(s)
                 playerAnim.SetBool("isGrinding", true);
+                AudioManager.i.SkateboardLand(GroundMaterial.Rail);
                 GrindFX.Play();
                 rb.freezeRotation = true;
                 onRail = true;
@@ -131,6 +132,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 //Play Trick animation(s)
                 playerAnim.SetTrigger("Kickflip");
+                AudioManager.i.SkateboardLand(GroundMaterial.Ground);
                 Debug.Log("Trick'd");
             }
             else if (currentObstacle.CompareTag("Barrier")) {
