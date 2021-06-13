@@ -1,33 +1,38 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityResonance", "FMODUnityResonance.csproj", "{427d9d55-6b9d-f9a6-2457-fc56701260de}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityResonance", "FMODUnityResonance.csproj", "{559D7D42-9D6B-A6F9-2457-FC56701260DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnity", "FMODUnity.csproj", "{a73de0f8-179f-49ad-792a-28451efc6d6f}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnity", "FMODUnity.csproj", "{F8E03DA7-9F17-AD49-792A-28451EFC6D6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{4e8178f2-25f0-90a6-ab12-e6624682045b}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F278814E-F025-A690-AB12-E6624682045B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityEditor", "FMODUnityEditor.csproj", "{4362268f-a2df-2b50-591a-5aabc2ba6b05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityEditor", "FMODUnityEditor.csproj", "{8F266243-DFA2-502B-591A-5AABC2BA6B05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityResonanceEditor", "FMODUnityResonanceEditor.csproj", "{ee56272c-cdfd-ee39-e1c8-17f70432b100}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityResonanceEditor", "FMODUnityResonanceEditor.csproj", "{2C2756EE-FDCD-39EE-E1C8-17F70432B100}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{427d9d55-6b9d-f9a6-2457-fc56701260de}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{427d9d55-6b9d-f9a6-2457-fc56701260de}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{a73de0f8-179f-49ad-792a-28451efc6d6f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{a73de0f8-179f-49ad-792a-28451efc6d6f}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4e8178f2-25f0-90a6-ab12-e6624682045b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4e8178f2-25f0-90a6-ab12-e6624682045b}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4362268f-a2df-2b50-591a-5aabc2ba6b05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4362268f-a2df-2b50-591a-5aabc2ba6b05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ee56272c-cdfd-ee39-e1c8-17f70432b100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ee56272c-cdfd-ee39-e1c8-17f70432b100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559D7D42-9D6B-A6F9-2457-FC56701260DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559D7D42-9D6B-A6F9-2457-FC56701260DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E03DA7-9F17-AD49-792A-28451EFC6D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E03DA7-9F17-AD49-792A-28451EFC6D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F278814E-F025-A690-AB12-E6624682045B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F278814E-F025-A690-AB12-E6624682045B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F266243-DFA2-502B-591A-5AABC2BA6B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F266243-DFA2-502B-591A-5AABC2BA6B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2756EE-FDCD-39EE-E1C8-17F70432B100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2756EE-FDCD-39EE-E1C8-17F70432B100}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {367D523D-3065-4195-9E33-4BA5B8BDE8B7}
 	EndGlobalSection
 EndGlobal
