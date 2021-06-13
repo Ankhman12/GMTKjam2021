@@ -30,7 +30,11 @@ public class ZombieHorde : MonoBehaviour
         if(distance > 1) {
             distance = 1;
         } else if(distance <= 0) {
-            //Game Over function
+            GameManager.Instance.SetGameState(GameState.GameOver);
+        }
+
+        if(Input.GetKeyDown(KeyCode.N)) {
+            HitObstacle();
         }
 
         //update position

@@ -5,17 +5,6 @@ using UnityEngine.EventSystems;
 
 public class ButtonSFX : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler
 {
-    public string mouseoverSfxPath;
-    public string selectSfxPath;
-
-    public void Start() {
-        if(mouseoverSfxPath == "") {
-            mouseoverSfxPath = "event:/SFX/UI/Mouseover";
-        }
-        if(selectSfxPath == "") {
-            selectSfxPath = "event:/SFX/UI/Menu Select";
-        }
-    }
 
     //Detect if the Cursor starts to pass over the GameObject
     public void OnPointerEnter(PointerEventData pointerEventData)

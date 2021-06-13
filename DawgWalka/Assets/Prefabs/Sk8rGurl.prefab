@@ -276,12 +276,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3855021045444815134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3930f6f5518d0ce4b9961a51bd67c9ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ad41f073905443ac9b4c9c7896dd606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {x: 0, y: 0}
-  moveSpeed: 6
-  drag: -2
+  moveSpeed: 0
+  drag: 0
   canTrick: 0
   currentObstacle: {fileID: 0}
   obstacleForce: 0

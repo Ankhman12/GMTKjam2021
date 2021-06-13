@@ -44,6 +44,19 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
         movement.y = drag;
         trickTimer -= Time.deltaTime;
+        
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+            Debug.Log("AAAA");
+            Debug.Log(GameManager.Instance.gameState);
+            if(GameManager.Instance.gameState == GameState.Game) {
+                Debug.Log("Pausing");
+                GameManager.Instance.SetGameState(GameState.Paused);
+            } else if (GameManager.Instance.gameState == GameState.Paused) {
+                Debug.Log("Unpausing");
+                GameManager.Instance.SetGameState(GameState.Game);
+            }    
+        } 
+        
     }
 
     private void FixedUpdate()

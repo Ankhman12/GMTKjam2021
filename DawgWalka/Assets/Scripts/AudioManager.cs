@@ -24,21 +24,41 @@ public class AudioManager : MonoBehaviour
     {
         if(i != null)
             GameObject.Destroy(this);
-        else
+        else {
             i = this;
+            skateboardNoise = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Skateboard/Skateboard");
+            music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Level Music");
+            jingle = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Intro Jingle");
+            horde = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Zombie Horde");
+        }
+            
 
         DontDestroyOnLoad(this);
+
     }
 
     // Start is called before the first frame update
     void Start()
-    {
-        skateboardNoise = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Skateboard/Skateboard");
-        music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Level Music");
-        jingle = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Intro Jingle");
-        horde = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Zombie Horde");
+    {   
+        GameManager.OnPause += OnPause;
+        GameManager.OnUnpause += OnUnpause;
+        GameManager.OnGameOver += OnDeath; 
+        Setup();
+    }
+
+    void OnDestroy() {
+        GameManager.OnPause -= OnPause;
+        GameManager.OnUnpause -= OnUnpause;
+        GameManager.OnGameOver -= OnDeath; 
+    }
+
+    //Separated because I think it needs to be retriggered when reloading level
+    void Setup() {
+        
         if(SceneManager.GetActiveScene().name == "ProgrammingScene") {
             StartGame();
+        } else if (SceneManager.GetActiveScene().name == "MainMenu") {
+            StartJingle();
         }
     }
 
@@ -89,6 +109,7 @@ public class AudioManager : MonoBehaviour
     public void OnDeath() {
         StopSkateboardNoise();
         StopMusic();
+        StopHordeNoise();
     }
 
     public void StartSkateboardNoise() {
@@ -131,5 +152,7 @@ public class AudioManager : MonoBehaviour
         skateboardNoise.setParameterByName("Ground Type", groundParam);
     }
 
-
+    public void OnTrick() {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Trick");
+    }
 }

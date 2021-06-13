@@ -3,35 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum GameState { NullState, Intro, MainMenu, Game, Paused };
+public enum GameState { NullState, Intro, MainMenu, Game, Paused, GameOver };
 
+public delegate void Action();
 public class GameManager : MonoBehaviour
 {
-    private static GameManager instance = null;
-    public GameState gameState { get; private set; }
+    public static GameManager Instance = null;
+    public GameState gameState = GameState.MainMenu;
 
     //Other fields
+    public static event Action OnPause;
+    public static event Action OnUnpause;
+    public static event Action OnGameOver;
 
     private GameManager()
     {
-        //initialize other fields
-    }
-
-    public static GameManager Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                instance = new GameManager();
-            }
-
-            return instance;
-        }
+        
     }
 
     public void SetGameState(GameState state)
     {
+        if(gameState == GameState.Paused && state != GameState.Paused) {
+            OnUnpause?.Invoke();
+        } 
         this.gameState = state;
         if (state == GameState.NullState) 
         { 
@@ -43,7 +37,7 @@ public class GameManager : MonoBehaviour
         }
         if (state == GameState.MainMenu)
         {
-            //...
+            
         }
         if (state == GameState.Game)
         {
@@ -51,20 +45,33 @@ public class GameManager : MonoBehaviour
         }
         if (state == GameState.Paused)
         {
-            //...
+            OnPause?.Invoke();
         }
-
+        if (state == GameState.GameOver)
+        {
+            OnGameOver?.Invoke();
+        }
     }
 
     private void Awake()
     {
+        if(Instance == null) {
+            Instance = new GameManager();
+        }
+        DontDestroyOnLoad(this);
+    }
 
-        SceneManager.LoadScene("MainMenu");
-
+    private void Start() {
+        if(SceneManager.GetActiveScene().name == "MainMenu") {
+            SetGameState(GameState.MainMenu);
+        } else if(SceneManager.GetActiveScene().name == "ProgrammingScene") {
+            SetGameState(GameState.Game);
+        }
     }
 
     private void Update()
     {
         //Do stuff
+        
     }
 }

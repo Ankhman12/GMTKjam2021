@@ -10,7 +10,7 @@ public class MenuFunctions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.i.StartJingle();
+        
     }
 
     // Update is called once per frame
@@ -20,12 +20,13 @@ public class MenuFunctions : MonoBehaviour
     }
 
     public void StartGame() {
-        AudioManager.i.StartGame();
+        GameManager.Instance.SetGameState(GameState.Game);
         SceneManager.LoadScene("ProgrammingScene", LoadSceneMode.Single);
+        AudioManager.i.StartGame();
     }
 
     public void Quit() {
-        AudioManager.i.StartJingle();
+        AudioManager.i.StopJingle();
         #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
         #else
