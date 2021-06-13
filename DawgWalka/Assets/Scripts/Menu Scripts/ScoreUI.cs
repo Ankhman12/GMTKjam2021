@@ -5,11 +5,11 @@ using TMPro;
 
 public class ScoreUI : MonoBehaviour
 {
-    TextMeshPro text;
+    public TextMeshProUGUI text;
     // Start is called before the first frame update
     void Start()
     {
-        text = GetComponent<TextMeshPro>();
+        text = GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
