@@ -14,15 +14,19 @@ public class Obstacle : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player")) {
             player = other.GetComponent<PlayerMovement>();
-            player.canTrick = true;
-            player.ResetTrickTimer();
-            player.currentObstacle = this.gameObject;
+            if(!player.canTrick) { //enabling one trigger from multiple colliders
+                player.canTrick = true;
+                player.ResetTrickTimer();
+                player.currentObstacle = this.gameObject;
+                Debug.Log(other);
+            }
+            
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && gameObject.CompareTag("Rail"))
         {
             player = other.GetComponent<PlayerMovement>();
             player.canTrick = false;

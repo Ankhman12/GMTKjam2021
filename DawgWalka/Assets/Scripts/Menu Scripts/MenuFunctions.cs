@@ -22,6 +22,7 @@ public class MenuFunctions : MonoBehaviour
     public void StartGame() {
         SceneManager.LoadScene("ProgrammingScene", LoadSceneMode.Single);
         GameManager.Instance.SetGameState(GameState.Game);
+        GameManager.Instance.Reset();
         ZombieHorde.distance = 1;
         AudioManager.i.StartGame();
     }

@@ -25,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
     public GameObject currentObstacle;
     [SerializeField] private float obstacleForce;
 
+    public static event ActionRef<GameObject> OnMissTrick;
+    public static event Action OnTrick;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,6 +88,10 @@ public class PlayerMovement : MonoBehaviour
         if (canTrick && trickTimer < 0)
         {
             //Trick failure
+            Debug.Log("miss");
+            OnMissTrick?.Invoke(ref currentObstacle);
+            canTrick = false;
+            currentObstacle = null;
         }
 
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
@@ -101,22 +108,27 @@ public class PlayerMovement : MonoBehaviour
         if(currentObstacle == null) {
             //Jump?
         }
-        else if (currentObstacle.CompareTag("Rail"))
-        {
-            //Play Trick animation(s)
-            //....
+        else 
+        { 
+            if (currentObstacle.CompareTag("Rail"))
+            {
+                //Play Trick animation(s)
+                //....
 
-            //freeze rotation
-            //rb.MoveRotation(180f);
-            rb.freezeRotation = true;
-            onRail = true;
-            Debug.Log("Yaet");
-        }
-        else if (currentObstacle.CompareTag("Cone"))
-        {
-            //Play Trick animation(s)
-            //....
-            Debug.Log("Trick'd");
+                //freeze rotation
+                //rb.MoveRotation(180f);
+                rb.freezeRotation = true;
+                onRail = true;
+                Debug.Log("Yaet");
+            }
+            else if (currentObstacle.CompareTag("Cone"))
+            {
+                //Play Trick animation(s)
+                //....
+                Debug.Log("Trick'd");
+            }
+            OnTrick?.Invoke();
+            canTrick = false;
         }
 
     }
@@ -129,7 +141,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void ResetTrickTimer() {
-        trickTimer = 1f;
+        trickTimer = 0.3f;
     }
+
 
 }

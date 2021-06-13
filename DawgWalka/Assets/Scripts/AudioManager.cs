@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager i;
 
 
-    private const float MAX_SPEED = 5.1f;
+    private const float MAX_SPEED = RoadController.maxMoveSpeed + 0.5f;
 
     private static FMOD.Studio.EventInstance skateboardNoise;
 
@@ -42,7 +42,8 @@ public class AudioManager : MonoBehaviour
     {   
         GameManager.OnPause += OnPause;
         GameManager.OnUnpause += OnUnpause;
-        GameManager.OnGameOver += OnDeath; 
+        GameManager.OnGameOver += OnDeath;
+        PlayerMovement.OnTrick += OnTrick; 
         Setup();
     }
 
@@ -150,5 +151,9 @@ public class AudioManager : MonoBehaviour
 
     public void OnTrick() {
         FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Trick");
+    }
+
+    public void OnCollide(ref GameObject collision) {
+        Debug.Log("Collided!");
     }
 }

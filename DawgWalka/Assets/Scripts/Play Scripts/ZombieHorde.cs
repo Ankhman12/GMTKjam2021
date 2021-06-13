@@ -9,18 +9,19 @@ public class ZombieHorde : MonoBehaviour
     //Game over when distance = 0;
     [SerializeField]
     public static float distance = 1;
-    public float decay = 0.35f;
+    public float decay = 0.1f;
     [SerializeField]
-    private float distanceToPlayer = 1.5f; //physical distance between player and zombies at furthest point
+    private float distanceToPlayer = 3.9f; //physical distance between player and zombies at furthest point
     private float startPosY;
 
-    float hitPenalty = 0.45f;
+    float hitPenalty = 0.5f;
     
     // Start is called before the first frame update
     void Start()
     {
         distance = 1;
         startPosY = transform.position.y;
+        PlayerMovement.OnMissTrick += HitObstacle;
     }
 
     // Update is called once per frame
@@ -42,9 +43,17 @@ public class ZombieHorde : MonoBehaviour
             new Vector3(transform.position.x, startPosY + ((1 - distance) * distanceToPlayer), transform.position.z);
     }
 
+    void OnDestroy() {
+        PlayerMovement.OnMissTrick -= HitObstacle;
+    }
+
     //should be called when player hits obstacle
     public void HitObstacle() {
         StartCoroutine(DecreaseDistance(hitPenalty));
+    }
+
+    public void HitObstacle(ref GameObject collision) {
+        HitObstacle();
     }
 
     //if you have a certain # of penalty
@@ -53,7 +62,7 @@ public class ZombieHorde : MonoBehaviour
     }
 
     IEnumerator DecreaseDistance(float penalty) {
-        float increasePerSecond = 0.6f;
+        float increasePerSecond = 0.8f;
         float totalAdded = 0;
         while(totalAdded < penalty) {
             distance -= increasePerSecond * Time.deltaTime;
@@ -61,4 +70,5 @@ public class ZombieHorde : MonoBehaviour
             yield return null;
         }
     }
+
 }
