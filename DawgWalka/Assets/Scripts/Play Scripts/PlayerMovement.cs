@@ -146,6 +146,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void LeaveRail() {
         GrindFX.Stop();
+        AudioManager.i.SkateboardLand(GroundMaterial.Ground);
         playerAnim.SetBool("isGrinding", false);
         onRail = false;
     }
