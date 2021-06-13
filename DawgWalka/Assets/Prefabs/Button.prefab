@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 367.1, y: 58.3}
+  m_SizeDelta: {x: 367.1, y: 70.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7693015493663196385
 CanvasRenderer:
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f9ff71a36d54f4ea199996aaccf2fb94, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4f80014a44f74f7b82fad5bf0a067e1, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -106,8 +106,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 055dcec15a6cb412b9c30fd9b024c473, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 9094152956a2f43699dc474914aeafd4, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 2a4cfbb31b84f4b37b562cec4839bf4a, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 3891a4b15de864e0799e5fcca145e1ab, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.3
+  m_fontSize: 45.85
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
