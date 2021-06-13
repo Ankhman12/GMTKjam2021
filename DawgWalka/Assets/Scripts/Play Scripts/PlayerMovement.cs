@@ -18,13 +18,12 @@ public class PlayerMovement : MonoBehaviour
     Vector3 NewPos;
 
     //Trick fields
-    private bool onRail;
+    [SerializeField] private bool onRail;
     //private bool isOllie;
     public bool canTrick;
     private float trickTimer;
     public GameObject currentObstacle;
-    [SerializeField]
-    private float obstacleForce;
+    [SerializeField] private float obstacleForce;
 
     // Start is called before the first frame update
     void Start()
@@ -44,32 +43,35 @@ public class PlayerMovement : MonoBehaviour
         //Player input
         movement.x = Input.GetAxis("Horizontal");
         movement.y = drag;
-        if (Input.GetKeyDown(KeyCode.Space) && canTrick) {
-            DoTrick();
-        }
         trickTimer -= Time.deltaTime;
-        
     }
 
     private void FixedUpdate()
-    {
+    { 
+        if (Input.GetKey(KeyCode.Space) && canTrick && !onRail)
+        {
+            DoTrick();
+        }
         if (onRail)
         {
-            if (!Input.GetKey(KeyCode.Space))
+            if (Input.GetKeyUp(KeyCode.Space) || currentObstacle == null)
             {
                 LeaveRail();
             }
             else
             {
                 movement = Vector2.zero;
-                //Debug.Log("sssKRRRRRRRRt");
+            }
+
+            Vector2 railPos = new Vector2(currentObstacle.transform.position.x, this.transform.position.y);
+            if (this.transform.position.x != railPos.x)
+            {
+                rb.MovePosition(railPos * moveSpeed * Time.deltaTime);
             }
         }
         if (canTrick && trickTimer < 0)
         {
-            if (currentObstacle.CompareTag("Cone")) {
-                currentObstacle.GetComponent<Rigidbody2D>().AddForce((transform.forward + transform.right) * obstacleForce);
-            }
+            //Trick failure
         }
 
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
@@ -88,10 +90,11 @@ public class PlayerMovement : MonoBehaviour
             //Play Trick animation(s)
             //....
 
-            //Snap player to rail
-            Vector2 railPos = new Vector2(currentObstacle.transform.position.x, this.transform.position.y);
-            this.transform.position = railPos;
+            //freeze rotation
+            //rb.MoveRotation(180f);
+            rb.freezeRotation = true;
             onRail = true;
+            Debug.Log("Yaet");
         }
         else if (currentObstacle.CompareTag("Cone"))
         {
@@ -102,8 +105,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void LeaveRail() {
-        rb.AddForce(-transform.right * 10f, ForceMode2D.Impulse); 
-        onRail = false;     
+        //rb.AddForce(-transform.right * 10f, ForceMode2D.Impulse);
+        //rb.MoveRotation(90f);
+        rb.freezeRotation = false;
+        onRail = false;
     }
 
     public void ResetTrickTimer() {
