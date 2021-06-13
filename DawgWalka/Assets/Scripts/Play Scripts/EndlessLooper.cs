@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EndlessLooper : MonoBehaviour
 {
-    Grid grid;
     public Transform[] tiles;
     List<Transform> tilesList;
     Queue<Transform> queue;
