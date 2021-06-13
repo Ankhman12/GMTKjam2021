@@ -173,7 +173,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5514099570428681472}
-  - component: {fileID: 5514099570428681475}
   - component: {fileID: 5514099570428681474}
   - component: {fileID: 5514099570428681477}
   m_Layer: 8
@@ -199,20 +198,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5514099570428681475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5514099570428681486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79937b03ea8daef47a759e31e7b9dd68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roadDir: {x: 0, y: -1}
-  moveSpeed: 5
 --- !u!61 &5514099570428681474
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -251,3 +236,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc1535922f19da84d978e6d66f615282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}

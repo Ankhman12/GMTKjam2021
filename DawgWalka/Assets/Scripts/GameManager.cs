@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     private void Start() {
         if(SceneManager.GetActiveScene().name == "MainMenu") {
             SetGameState(GameState.MainMenu);
-        } else if(SceneManager.GetActiveScene().name == "ProgrammingScene") {
+        } else if(SceneManager.GetActiveScene().name == "ProgrammingScene" || SceneManager.GetActiveScene().name == "WillTestingScene") {
             SetGameState(GameState.Game);
         }
         PlayerMovement.OnTrick += OnTrick;

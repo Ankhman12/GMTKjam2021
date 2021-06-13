@@ -26,6 +26,7 @@ public class RoadController : MonoBehaviour
         currentPos = this.transform.position;
         if(GameManager.Instance.gameState == GameState.Game) currentPos += roadDir * moveSpeed * Time.deltaTime;
         this.transform.position = currentPos;
+        Debug.Log(moveSpeed);
     }
 
     public void SlowDown(ref GameObject obj) {
