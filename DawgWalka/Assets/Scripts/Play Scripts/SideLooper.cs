@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class SideLooper : MonoBehaviour
 {
-    Transform[] tiles;
+    public Transform[] tiles;
     List<Transform> tilesList;
     Queue<Transform> queue;
     int index = 0;
-    float size = 11.8f;
+    float size = 44f;
     
     // Start is called before the first frame update
     void Start()
     {
         tilesList = new List<Transform>();
         foreach(Transform t in tiles) {
-            if(t.transform != transform) {
-                tilesList.Add(t);
-            }
+            tilesList.Add(t);
             
         }
         queue = new Queue<Transform>(tilesList.Count);
@@ -37,6 +35,7 @@ public class SideLooper : MonoBehaviour
         if(next.position.y < -2 * size) {
             next = queue.Dequeue();
             next.localPosition = new Vector3(0, index * size, 0);
+            index++;
             queue.Enqueue(next);
         }
     }
