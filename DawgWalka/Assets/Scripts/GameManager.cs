@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         }
         if (state == GameState.Game)
         {
-            //...
+            
         }
         if (state == GameState.Paused)
         {

@@ -84,14 +84,12 @@ public class AudioManager : MonoBehaviour
 
     public void StopJingle() {
         if(jingle.isValid()) {
-            jingle.release();
             jingle.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }  
     }
 
     public void StartMusic() {
         music.start();
-        music.release();
     }
 
     public void StopMusic() {
@@ -117,7 +115,6 @@ public class AudioManager : MonoBehaviour
     }
 
     public void StopSkateboardNoise() {
-        skateboardNoise.release();
         skateboardNoise.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
@@ -126,7 +123,6 @@ public class AudioManager : MonoBehaviour
     }
 
     public void StopHordeNoise() {
-        horde.release();
         horde.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 

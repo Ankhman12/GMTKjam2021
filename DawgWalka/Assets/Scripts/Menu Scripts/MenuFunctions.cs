@@ -20,9 +20,16 @@ public class MenuFunctions : MonoBehaviour
     }
 
     public void StartGame() {
-        GameManager.Instance.SetGameState(GameState.Game);
         SceneManager.LoadScene("ProgrammingScene", LoadSceneMode.Single);
+        GameManager.Instance.SetGameState(GameState.Game);
+        ZombieHorde.distance = 1;
         AudioManager.i.StartGame();
+    }
+
+    public void MainMenu() {
+        GameManager.Instance.SetGameState(GameState.MainMenu);
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        AudioManager.i.StartJingle();
     }
 
     public void Quit() {

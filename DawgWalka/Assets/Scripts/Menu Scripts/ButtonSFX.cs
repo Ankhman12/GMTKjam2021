@@ -14,7 +14,7 @@ public class ButtonSFX : MonoBehaviour, IPointerEnterHandler, IPointerClickHandl
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UI/Menu Select");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UI/Select");
     }
     
 }
