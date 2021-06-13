@@ -23,10 +23,11 @@ public class PlayerMovement : MonoBehaviour
     public bool canTrick;
     private float trickTimer;
     public GameObject currentObstacle;
-    [SerializeField] private float obstacleForce;
-
     public static event ActionRef<GameObject> OnMissTrick;
     public static event Action OnTrick;
+
+    public ParticleSystem GrindFX;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -113,8 +114,9 @@ public class PlayerMovement : MonoBehaviour
             if (currentObstacle.CompareTag("Rail"))
             {
                 //Play Trick animation(s)
-                //....
-
+                anim.SetBool("isGrinding", true);
+                Debug.Log("skrrrrrrrrrrrr");
+                GrindFX.Play();
                 //freeze rotation
                 //rb.MoveRotation(180f);
                 rb.freezeRotation = true;
@@ -124,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
             else if (currentObstacle.CompareTag("Cone"))
             {
                 //Play Trick animation(s)
-                //....
+                anim.SetTrigger("Kickflip");
                 Debug.Log("Trick'd");
             }
             OnTrick?.Invoke();
@@ -134,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void LeaveRail() {
-        grindSparks.Stop();
+        GrindFX.Stop();
         anim.SetBool("isGrinding", false);
         onRail = false;
     }

@@ -945,6 +945,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roadDir: {x: 0, y: -1}
+--- !u!95 &1026839998 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3796041373738181203, guid: 452da339ef3f960428083406aace45d3, type: 3}
+  m_PrefabInstance: {fileID: 3855021045507481038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1081433655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,6 +1118,10 @@ PrefabInstance:
     - target: {fileID: 8597081443221508759, guid: fc70ec74494ed0446812f165ffc3471e, type: 3}
       propertyPath: m_Name
       value: Zombie Horde
+      objectReference: {fileID: 0}
+    - target: {fileID: 8597081443221508759, guid: fc70ec74494ed0446812f165ffc3471e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc70ec74494ed0446812f165ffc3471e, type: 3}
@@ -2733,6 +2742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bf4d1cc33f0e6241982a440f3ba490e, type: 3}
+--- !u!198 &1919047814 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3237215149139160193, guid: 452da339ef3f960428083406aace45d3, type: 3}
+  m_PrefabInstance: {fileID: 3855021045507481038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1966250661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2797,10 +2811,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1193236531908901496, guid: 452da339ef3f960428083406aace45d3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193236531908901496, guid: 452da339ef3f960428083406aace45d3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522003505419882114, guid: 452da339ef3f960428083406aace45d3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237215149139160193, guid: 452da339ef3f960428083406aace45d3, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237215149139160193, guid: 452da339ef3f960428083406aace45d3, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3237215149139160193, guid: 452da339ef3f960428083406aace45d3, type: 3}
+      propertyPath: prewarm
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3855021045444815131, guid: 452da339ef3f960428083406aace45d3, type: 3}
       propertyPath: drag
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 3855021045444815131, guid: 452da339ef3f960428083406aace45d3, type: 3}
+      propertyPath: GrindFX
+      value: 
+      objectReference: {fileID: 1919047814}
+    - target: {fileID: 3855021045444815131, guid: 452da339ef3f960428083406aace45d3, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1026839998}
     - target: {fileID: 3855021045444815132, guid: 452da339ef3f960428083406aace45d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.01999998
@@ -2881,10 +2927,18 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.6812158
       objectReference: {fileID: 0}
+    - target: {fileID: 4012250699073307818, guid: 452da339ef3f960428083406aace45d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6842000448763345704, guid: 452da339ef3f960428083406aace45d3, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6842000448763345704, guid: 452da339ef3f960428083406aace45d3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 185cfd657d80cb747bac2d5ca7e94321, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 452da339ef3f960428083406aace45d3, type: 3}
 --- !u!1001 &5514099569781188761
