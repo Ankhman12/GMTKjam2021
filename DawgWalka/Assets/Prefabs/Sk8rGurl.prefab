@@ -5016,8 +5016,9 @@ MonoBehaviour:
   onRail: 0
   canTrick: 0
   currentObstacle: {fileID: 0}
-  GrindFX: {fileID: 0}
-  anim: {fileID: 0}
+  GrindFX: {fileID: 3237215149139160193}
+  playerAnim: {fileID: 3796041373738181203}
+  dogAnim: {fileID: 0}
 --- !u!61 &3146225684948222510
 BoxCollider2D:
   m_ObjectHideFlags: 0

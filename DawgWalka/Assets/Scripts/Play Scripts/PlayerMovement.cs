@@ -26,8 +26,10 @@ public class PlayerMovement : MonoBehaviour
     public static event ActionRef<GameObject> OnMissTrick;
     public static event Action OnTrick;
 
+    //Animations and VFX
     public ParticleSystem GrindFX;
-    public Animator anim;
+    public Animator playerAnim;
+    public Animator dogAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -91,7 +93,12 @@ public class PlayerMovement : MonoBehaviour
             //Trick failure
             Debug.Log("miss");
             OnMissTrick?.Invoke(ref currentObstacle);
+            dogAnim.SetTrigger("Slowed");
             canTrick = false;
+            if (!currentObstacle.CompareTag("Rail"))
+            {
+                currentObstacle.GetComponent<Obstacle>().Impact();
+            }
             currentObstacle = null;
         }
 
@@ -114,11 +121,8 @@ public class PlayerMovement : MonoBehaviour
             if (currentObstacle.CompareTag("Rail"))
             {
                 //Play Trick animation(s)
-                anim.SetBool("isGrinding", true);
-                Debug.Log("skrrrrrrrrrrrr");
+                playerAnim.SetBool("isGrinding", true);
                 GrindFX.Play();
-                //freeze rotation
-                //rb.MoveRotation(180f);
                 rb.freezeRotation = true;
                 onRail = true;
                 Debug.Log("Yaet");
@@ -126,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
             else if (currentObstacle.CompareTag("Cone"))
             {
                 //Play Trick animation(s)
-                anim.SetTrigger("Kickflip");
+                playerAnim.SetTrigger("Kickflip");
                 Debug.Log("Trick'd");
             }
             OnTrick?.Invoke();
@@ -137,7 +141,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void LeaveRail() {
         GrindFX.Stop();
-        anim.SetBool("isGrinding", false);
+        playerAnim.SetBool("isGrinding", false);
         onRail = false;
     }
 
