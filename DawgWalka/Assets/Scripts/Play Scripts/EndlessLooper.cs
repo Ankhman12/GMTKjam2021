@@ -51,11 +51,11 @@ public class EndlessLooper : MonoBehaviour
             Populate(next);
             queue.Enqueue(next);
         }
-        Debug.Log(queue.Peek());
     }
 
     void Populate(Transform next) {
-        for(int i = 0; i < 2; i++) {
+        int obstacleCount = Random.Range(1, 3);
+        for(int i = 0; i < obstacleCount; i++) {
             int index = Random.Range (0, obstaclesList.Count); 
             Debug.Log(obstaclesList.Count);
             Obstacle obs = obstaclesList[index];
