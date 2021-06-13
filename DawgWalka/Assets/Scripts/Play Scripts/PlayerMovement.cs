@@ -134,9 +134,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void LeaveRail() {
-        //rb.AddForce(-transform.right * 10f, ForceMode2D.Impulse);
-        //rb.MoveRotation(90f);
-        rb.freezeRotation = false;
+        grindSparks.Stop();
+        anim.SetBool("isGrinding", false);
         onRail = false;
     }
 
