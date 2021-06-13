@@ -19,7 +19,7 @@ public class RoadController : MonoBehaviour
     void Update()
     {
         currentPos = this.transform.position;
-        currentPos += roadDir * moveSpeed * Time.deltaTime;
+        if(GameManager.Instance.gameState == GameState.Game) currentPos += roadDir * moveSpeed * Time.deltaTime;
         this.transform.position = currentPos;
     }
 }

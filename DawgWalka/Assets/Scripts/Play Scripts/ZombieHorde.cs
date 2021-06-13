@@ -26,7 +26,7 @@ public class ZombieHorde : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        distance += decay * Time.deltaTime;
+        if(GameManager.Instance.gameState == GameState.Game) distance += decay * Time.deltaTime;
         if(distance > 1) {
             distance = 1;
         } else if(distance <= 0) {

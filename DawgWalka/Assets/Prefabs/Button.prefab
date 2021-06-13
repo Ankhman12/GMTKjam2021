@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7693015493663196385}
   - component: {fileID: 7693015493663196398}
   - component: {fileID: 7693015493663196399}
-  - component: {fileID: 310252634349384463}
+  - component: {fileID: 2034128378981882785}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a4f80014a44f74f7b82fad5bf0a067e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67721be112ca056439258ead17188cc1, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -106,8 +106,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 2a4cfbb31b84f4b37b562cec4839bf4a, type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 3891a4b15de864e0799e5fcca145e1ab, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: fccb56d115cd37b498089f0ab3b05ddf, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 16e63931bb67001429dde878868ba1c8, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &310252634349384463
+--- !u!114 &2034128378981882785
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7693015493663196397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ddc2356151a84014afc0f1bfad282c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 296cd8e7ca6bd434c8df0e7a9541b2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7693015494190493235
@@ -198,10 +198,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Text
+  m_text: Test
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2ef24d9d690c34791855e273f156186f, type: 2}
-  m_sharedMaterial: {fileID: -8268339454123215547, guid: 2ef24d9d690c34791855e273f156186f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ede981747361384ea92bc958301a2ae, type: 2}
+  m_sharedMaterial: {fileID: 1694658065678540025, guid: 3ede981747361384ea92bc958301a2ae, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -226,11 +226,11 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontSize: 45.85
-  m_fontSizeBase: 24
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 205.5
+  m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512

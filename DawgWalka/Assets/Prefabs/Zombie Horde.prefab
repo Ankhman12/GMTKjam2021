@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8597081443221508753}
   - component: {fileID: 8597081443221508752}
-  - component: {fileID: 8597081443221508754}
+  - component: {fileID: 6881195933002896383}
   m_Layer: 0
   m_Name: Zombie Horde
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8597081443221508754
+--- !u!114 &6881195933002896383
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,9 +92,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8597081443221508759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c131f16699b3c445992d7c7a86fa2d6a, type: 3}
+  m_Script: {fileID: 11500000, guid: 487e890d7eda3a0429b90edc1c638a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeableDistance: 1
-  decay: 0.05
+  decay: 0.35
   distanceToPlayer: 1.5

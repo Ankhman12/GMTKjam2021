@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5147759194792047627}
   - component: {fileID: 5147759194792047626}
-  - component: {fileID: 5147759194792047628}
+  - component: {fileID: 3042692145975515233}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da3f882b4ed374a81bbb08357e1d5ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5147759194792047628
+--- !u!114 &3042692145975515233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,7 +53,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5147759194792047625}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f785f5486d7bc4da6b9fbd52b8636f14, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e26adc45d7a0294688419ac5821561e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameState: 2

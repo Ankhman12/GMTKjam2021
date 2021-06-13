@@ -98,7 +98,10 @@ public class PlayerMovement : MonoBehaviour
     
 
     private void DoTrick() {
-        if (currentObstacle.CompareTag("Rail"))
+        if(currentObstacle == null) {
+            //Jump?
+        }
+        else if (currentObstacle.CompareTag("Rail"))
         {
             //Play Trick animation(s)
             //....
@@ -113,6 +116,7 @@ public class PlayerMovement : MonoBehaviour
         {
             //Play Trick animation(s)
             //....
+            Debug.Log("Trick'd");
         }
 
     }

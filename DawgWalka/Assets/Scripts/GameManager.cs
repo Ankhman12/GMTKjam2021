@@ -16,11 +16,6 @@ public class GameManager : MonoBehaviour
     public static event Action OnUnpause;
     public static event Action OnGameOver;
 
-    private GameManager()
-    {
-        
-    }
-
     public void SetGameState(GameState state)
     {
         if(gameState == GameState.Paused && state != GameState.Paused) {
@@ -55,18 +50,24 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance == null) {
-            Instance = new GameManager();
+        if(Instance != null) {
+            Debug.Log("Destroying");
+            GameObject.Destroy(this);
+        } else {
+            Instance = this;
         }
         DontDestroyOnLoad(this);
+
     }
 
     private void Start() {
+        Debug.Log(gameState);
         if(SceneManager.GetActiveScene().name == "MainMenu") {
             SetGameState(GameState.MainMenu);
         } else if(SceneManager.GetActiveScene().name == "ProgrammingScene") {
             SetGameState(GameState.Game);
         }
+        Debug.Log(gameState);
     }
 
     private void Update()
