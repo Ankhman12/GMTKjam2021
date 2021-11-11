@@ -30,7 +30,7 @@ public class ZombieHorde : MonoBehaviour
         if(GameManager.Instance.gameState == GameState.Game) distance += decay * Time.deltaTime;
         if(distance > 1) {
             distance = 1;
-        } else if(distance <= 0) {
+        } else if(distance <= 0 && GameManager.Instance.gameState == GameState.Game) {
             GameManager.Instance.SetGameState(GameState.GameOver);
         }
 

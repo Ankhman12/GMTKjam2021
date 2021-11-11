@@ -155,7 +155,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/SFX/UI/Mouseover
+  EventReference:
+    Guid:
+      Data1: -2022176764
+      Data2: 1340665875
+      Data3: 322554024
+      Data4: 1977223922
+    Path: event:/SFX/UI/Mouseover
+  Event: 
   PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1

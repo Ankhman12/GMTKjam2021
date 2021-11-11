@@ -420,6 +420,7 @@ MonoBehaviour:
   ImportType: 0
   TargetAssetPath: FMODBanks
   TargetBankFolder: 
+  EventLinkage: 0
   LoggingLevel: 2
   SpeakerModeSettings: []
   SampleRateSettings: []
@@ -443,7 +444,9 @@ MonoBehaviour:
   EnableErrorCallback: 0
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
+  CurrentVersion: 131587
   HideSetupWizard: 1
+  LastEventReferenceScanVersion: 131587
   Platforms:
   - {fileID: -7427551386052088685}
   - {fileID: -6478443872113395983}

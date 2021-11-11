@@ -111,6 +111,7 @@ public class AudioManager : MonoBehaviour
     public void OnDeath() {
         StopSkateboardNoise();
         StopMusic();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Music/Game Over");
         StopHordeNoise();
     }
 
